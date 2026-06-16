@@ -1,0 +1,23 @@
+# Secret-scan test (TruffleHog). These use REAL detectable formats so the
+# scanner actually fires (unlike random fakes, which it ignores). None are live
+# credentials to anything of yours. The AWS one is TruffleHog's own public test
+# key. Rotate/remove all of these in real life.
+
+# AWS (TruffleHog public test key - detectable)
+AWS_ACCESS_KEY_ID = "AKIAYVP4CIPPERUVIFXG"
+AWS_SECRET_ACCESS_KEY = "Xb8aQ0 FAKEsecretFAKEsecretFAKEsecretXYZ1"
+
+# JSON Web Token (detectable as JWT)
+SESSION_JWT = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+
+# Slack incoming webhook (detectable)
+SLACK_WEBHOOK = "https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX"
+
+# Private key block (detectable as PrivateKey)
+PRIVATE_KEY = """
+-----BEGIN RSA PRIVATE KEY-----
+MIIEowIBAAKCAQEA1c7Pj5Pad7OejecsQ0bu3aozN3tihPmljnnudb9G3HECdnH
+2yYWFwpw3jClO8wxljYBKDcKDuP5z9z5Pad7OejecsQ0bu3aozN3tihPmljnnud
+b9G3HECdnH2yYWFwpw3jClO8wxljYBKDcKDuP1c7Pj5Pad7OejecsQ0bu3aozN3
+-----END RSA PRIVATE KEY-----
+"""
